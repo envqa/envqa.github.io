@@ -1,1 +1,559 @@
-coming soon!
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/86150/Desktop/envqa_web/envqa.html -->
+<html lang="en" data-default-color-scheme="&quot;auto&quot;" data-user-color-scheme="light" class=" ">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+  <!-- <link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/img/favicon.png">
+  <link rel="icon" type="image/png" href="http://localhost:4000/img/favicon.png"> -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="Difei Gao">
+  <meta name="keywords" content="">
+  <title>Env-QA Dataset</title>
+
+  <style class="anchorjs"></style>
+  <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="./index_files/github-markdown.min.css">
+  <link rel="stylesheet" href="./index_files/hint.min.css">
+
+
+
+
+
+  <link rel="stylesheet" href="./index_files/github-gist.min.css">
+
+
+
+
+  <link rel="stylesheet" href="./index_files/jquery.fancybox.min.css">
+
+
+
+
+  <!-- 主题依赖的图标库，不要自行修改 -->
+
+  <link rel="stylesheet" href="./index_files/font_1749284_ba1fz6golrf.css">
+
+
+
+  <link rel="stylesheet" href="./index_files/font_1736178_kmeydafke9r.css">
+
+
+  <link rel="stylesheet" href="./index_files/main.css">
+
+  <!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = { "hostname": "example.com", "root": "/", "version": "1.8.7", "typing": { "enable": true, "typeSpeed": 70, "cursorChar": "_", "loop": false }, "anchorjs": { "enable": true, "element": "h1,h2,h3,h4,h5,h6", "placement": "right", "visible": "hover", "icon": "" }, "progressbar": { "enable": true, "height_px": 3, "color": "#29d", "options": { "showSpinner": false, "trickleSpeed": 100 } }, "copy_btn": true, "image_zoom": { "enable": true }, "toc": { "enable": true, "headingSelector": "h1,h2,h3,h4,h5,h6", "collapseDepth": 0 }, "lazyload": { "enable": true, "onlypost": false }, "web_analytics": { "enable": false, "baidu": null, "google": null, "gtag": null, "tencent": { "sid": null, "cid": null }, "woyaola": null, "cnzz": null, "leancloud": { "app_id": null, "app_key": null, "server_url": null } } };
+  </script>
+  <script src="./index_files/utils.js.下载"></script>
+  <script src="./index_files/color-schema.js.下载"></script>
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+  <meta name="generator" content="Hexo 5.4.0">
+</head>
+
+
+<body data-new-gr-c-s-check-loaded="14.997.0" data-gr-ext-installed="" class="">
+  <header style="height: 30vh;">
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg scrolling-navbar navbar-dark">
+      <div class="container">
+        <a class="navbar-brand"
+          href="file:///C:/Users/86150/Desktop/envqa_web/envqa.html#navbar">&nbsp;<strong>Env-QA</strong>&nbsp;</a>
+
+        <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <div class="animated-icon"><span></span><span></span><span></span></div>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto text-center">
+
+
+
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Overview">
+                <i class="iconfont icon-home-fill"></i>
+                Overview
+              </a>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Annotations">
+                <i class="far fa-arrow-alt-circle-down"></i> Download</a>
+            </li>
+
+
+
+
+
+
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://openaccess.thecvf.com/content/ICCV2021/papers/Gao_Env-QA_A_Video_Question_Answering_Benchmark_for_Comprehensive_Understanding_of_ICCV_2021_paper.pdf">
+                <i class="far fa-sticky-note"></i>
+                Paper
+              </a>
+            </li>
+
+
+
+
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">
+                <i class="iconfont icon-user-fill"></i>
+                Contact
+              </a>
+            </li>
+
+
+
+
+
+
+            <li class="nav-item" id="color-toggle-btn">
+              <a class="nav-link" href="javascript:">&nbsp;<i class="iconfont icon-dark" id="color-toggle-icon"
+                  data="dark"></i>&nbsp;</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner" id="banner" parallax="true"
+      style="background: url(&quot;./img/default.png&quot;) center center / cover no-repeat; transform: translate3d(0px, 0px, 0px);">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(47, 65, 84, 0.7)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle"
+              title="Env-QA:
+              A Video QA Benchmark for Dynamic Environments Understanding">Env-QA <br> </span> 
+              <span class='h3'> A Video QA Dataset for Dynamic Environments Understanding</span>
+
+
+
+
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+
+
+    <div class="container-fluid nopadding-x">
+      <div class="row nomargin-x">
+        <div class="d-none d-lg-block col-lg-2"></div>
+        <div class="col-lg-8 nopadding-x-md">
+          <div class="container nopadding-x-md" id="board-ctn">
+            <div class="py-5" id="board">
+              <article class="post-content mx-auto">
+                <!-- SEO header -->
+                <h1 style="display: none">Env-QA: A Video Question Answering Benchmark for Comprehensive Understanding
+                  of Dynamic Environments</h1>
+
+                <div class="markdown-body">
+                  <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview<a
+                      class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#Overview"
+                      style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+                  <p>
+                    <img src="./index_files/overview.png" style="max-width: 70%;margin: 0rem auto;box-shadow: none;">
+                    <br>Visual understanding goes well beyond the study of images or videos on the web. Env-QA is a new video QA dataset to evaluate the ability of understanding the composition, layout, and state changes of the environment presented by the events in videos.
+                  </p>
+                  <h2 id="Statistics"><a href="#Statistics" class="headerlink" title="Statistics"></a>Statistics<a
+                      class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#Statistics"
+                      style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+                  <ul>
+                    <li>23.3K videos collected in AI2-THOR simulator </li>
+                    <li>85.1K questions</li>
+                    <li>Rich additional annotations, e.g., instance segmentation, depth image, and environment meta data.</li>
+                  </ul>
+                  <p><img src="./index_files/annotations.png" style="max-width: 70%;margin: 0rem auto;box-shadow: none;"></p>
+                  
+                  <h2 id="Annotations"><a href="#Annotations" class="headerlink" title="Annotations"></a>Download<a
+                      class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#Annotations"
+                      style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+                  <ul>
+                    <li>
+                      <p>Videos: Download <a target="_blank" rel="noopener"
+                          href="https://drive.google.com/drive/folders/1b9iQ2U0KvM_IJYij2aUFA_C88-JRsRaE?usp=sharing"><strong>env-qa_video.zip and env-qa_video.z01 to *.z07</strong></a>, then, unzip env-qa_video.zip to obtain 4.7K long videos. We futhur split part of them to generate in a total of 23.3K videos. The video split results are recorded in <a target="_blank" rel="noopener"
+                          href="https://drive.google.com/drive/folders/1b9iQ2U0KvM_IJYij2aUFA_C88-JRsRaE?usp=sharing"><strong>env_qa_video_annotation_v1.json </strong></a>. </p>
+                      
+                    </li>
+                    <li>
+                      <p>Questions: We also privide diverse questions in <a target="_blank" rel="noopener"
+                          href="https://drive.google.com/open?id=1KaIAw9ipZhd3e-eOHd1-hx34DPXCtTgV"><strong>env_qa-questions.json</strong></a>.
+                      </p>
+                    </li>
+                    <li>
+                      <p>Video features: We use Faster-RCNN fine-tuned on the AI2-THOR images to extracted object features of each frame at <a target="_blank" rel="noopener"
+                        href="https://drive.google.com/file/d/1xUsoQO2Lm79yynUBSz4NMaJlnxxqjRKk/view?usp=sharing"><strong>env_qa_objects.h5</strong></a>. 
+                      </p>
+                    </li>
+
+                    <!-- <li>
+                      Dataset Split: Env-QA is divided into train, val and test splits. We record the question
+                    </li> -->
+
+                  </ul>
+                  <h2 id="Evaluation"><a href="#Evaluation" class="headerlink" title="Evaluation"></a>Evaluation<a
+                      class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#Evaluation"
+                      style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+                  <p> Every answer in Env-QA can be mapped into the <strong>role-value</strong> format. Then, the accuracy of the
+                    predicted answer can be calculated as an <strong>IoU-like</strong> score of the predicted values and the ground-truth
+                    values.</p>
+
+                  <h2 id="Citation"><a href="#Citation" class="headerlink" title="Citation"></a>Citation<a
+                      class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#Citation"
+                      style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+                  <div class="code-wrapper">
+                    <pre><code class="hljs mipsasm">@inproceedings{Gao_2021_ICCV,
+  title={Env-QA: A Video Question Answering Benchmark for Comprehensive Understanding of Dynamic Environments,
+  author={Gao, Difei and Wang, Ruiping and Bai, Ziyi and Chen, Xilin},
+  journal={<span class="hljs-keyword">Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)</span>,
+  month={October},
+  year={<span class="hljs-number">2021</span>},
+  pages = {1675-1685}
+}</code><button class="copy-btn copy-btn-dark" data-clipboard-snippet=""><i class="iconfont icon-copy"></i><span>Copy</span></button><button class="copy-btn copy-btn-dark" data-clipboard-snippet=""><i class="iconfont icon-copy"></i><span>Copy</span></button><button class="copy-btn copy-btn-dark" data-clipboard-snippet=""><i class="iconfont icon-copy"></i><span>Copy</span></button></pre>
+                  </div>
+
+                  <h2 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact<a
+                      class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#Contact"
+                      style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+                  <p>Reach us out at <a href="mailto:difei.gao@vipl.ict.ac.cn">difei.gao@vipl.ict.ac.cn</a> for any
+                    questions, suggestions and feedback.</p>
+
+                </div>
+                <hr>
+                <div>
+                  <div class="post-metas mb-3">
+
+
+                  </div>
+
+
+                  <div class="post-prevnext">
+                    <article class="post-prev col-6">
+
+
+                    </article>
+                    <article class="post-next col-6">
+
+
+                    </article>
+                  </div>
+
+                </div>
+
+
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn" style="padding-top: 0px;">
+          <div id="toc" style="visibility: visible;">
+            <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Content</p>
+            <div class="toc-body" id="toc-body">
+              <ol class="tocbot-list ">
+                <li class="toc-list-item is-active-li"><a
+                    href="file:///C:/Users/86150/Desktop/envqa_web/envqa.html#Overview"
+                    class="tocbot-link node-name--H2  tocbot-active-link">Overview</a></li>
+                <li class="toc-list-item"><a href="file:///C:/Users/86150/Desktop/envqa_web/envqa.html#Statistics"
+                    class="tocbot-link node-name--H2 ">Statistics</a></li>
+                <li class="toc-list-item"><a href="file:///C:/Users/86150/Desktop/envqa_web/envqa.html#Annotations"
+                    class="tocbot-link node-name--H2 ">Annotations</a></li>
+                <li class="toc-list-item"><a href="file:///C:/Users/86150/Desktop/envqa_web/envqa.html#Evaluation"
+                    class="tocbot-link node-name--H2 ">Evaluation</a></li>
+                <li class="toc-list-item"><a href="file:///C:/Users/86150/Desktop/envqa_web/envqa.html#Citation"
+                    class="tocbot-link node-name--H2 ">Citation</a></li>
+                <li class="toc-list-item"><a href="file:///C:/Users/86150/Desktop/envqa_web/envqa.html#Contact"
+                    class="tocbot-link node-name--H2 ">Contact</a></li>
+              </ol>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Custom -->
+
+
+
+
+
+    <a id="scroll-top-button" href="#" role="button" style="bottom: -60px; right: 223.482px;">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+
+
+
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+            <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body mx-3">
+            <div class="md-form mb-5">
+              <input type="text" id="local-search-input" class="form-control validate">
+              <label data-error="x" data-success="v" for="local-search-input">keyword</label>
+            </div>
+            <div class="list-group" id="local-search-result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+    <div class="footer-content">
+      Built and maintained by Difei Gao
+    </div>
+
+
+
+
+
+  </footer>
+
+  <!-- SCRIPTS -->
+
+  <script src="./index_files/nprogress.min.js.下载"></script>
+  <link rel="stylesheet" href="./index_files/nprogress.min.css">
+
+  <script>
+    NProgress.configure({ "showSpinner": false, "trickleSpeed": 100 })
+    NProgress.start()
+    window.addEventListener('load', function () {
+      NProgress.done();
+    })
+  </script>
+
+
+  <script src="./index_files/jquery.min.js.下载"></script>
+  <script src="./index_files/bootstrap.min.js.下载"></script>
+  <script src="./index_files/debouncer.js.下载"></script>
+  <script src="./index_files/events.js.下载"></script>
+  <script src="./index_files/plugins.js.下载"></script>
+
+  <!-- Plugins -->
+
+
+
+  <script src="./index_files/lazyload.js.下载"></script>
+
+
+
+
+
+
+
+
+  <script src="./index_files/tocbot.min.js.下载"></script>
+
+
+
+  <!-- <script src="./envqa_files/jquery.fancybox.min.js.下载"></script> -->
+
+
+
+  <script src="./index_files/anchor.min.js.下载"></script>
+
+
+
+  <script defer="" src="./index_files/clipboard.min.js.下载"></script>
+
+
+
+
+
+
+  <script src="./index_files/typed.min.js.下载"></script>
+  <!-- <script>
+      (function (window, document) {
+        var typing = Fluid.plugins.typing;
+        var title = document.getElementById('subtitle').title;
+
+        typing(title)
+
+      })(window, document);
+  </script> -->
+  <style type="text/css" data-typed-js-css="true">
+    .typed-cursor {
+      opacity: 1;
+    }
+
+    .typed-cursor.typed-cursor--blink {
+      animation: typedjsBlink 0.7s infinite;
+      -webkit-animation: typedjsBlink 0.7s infinite;
+      animation: typedjsBlink 0.7s infinite;
+    }
+
+    @keyframes typedjsBlink {
+      50% {
+        opacity: 0.0;
+      }
+    }
+
+    @-webkit-keyframes typedjsBlink {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <style type="text/css" data-typed-js-css="true">
+    .typed-cursor {
+      opacity: 1;
+    }
+
+    .typed-cursor.typed-cursor--blink {
+      animation: typedjsBlink 0.7s infinite;
+      -webkit-animation: typedjsBlink 0.7s infinite;
+      animation: typedjsBlink 0.7s infinite;
+    }
+
+    @keyframes typedjsBlink {
+      50% {
+        opacity: 0.0;
+      }
+    }
+
+    @-webkit-keyframes typedjsBlink {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <style type="text/css" data-typed-js-css="true">
+    .typed-cursor {
+      opacity: 1;
+    }
+
+    .typed-cursor.typed-cursor--blink {
+      animation: typedjsBlink 0.7s infinite;
+      -webkit-animation: typedjsBlink 0.7s infinite;
+      animation: typedjsBlink 0.7s infinite;
+    }
+
+    @keyframes typedjsBlink {
+      50% {
+        opacity: 0.0;
+      }
+    }
+
+    @-webkit-keyframes typedjsBlink {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+
+
+
+  <script src="./index_files/local-search.js.下载"></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 主题的启动项 保持在最底部 -->
+  <script src="./index_files/boot.js.下载"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
